@@ -8,7 +8,16 @@ import {
   useTransform,
 } from "framer-motion";
 
-const VIDEOS = [
+type Video = {
+  id: string;
+  title: string;
+  category: string;
+  client: string;
+  desc: string;
+  customThumb?: string;
+};
+
+const VIDEOS: Video[] = [
   {
     id: "Mzw1bQwoW4w",
     title: "Brand Storytelling",
@@ -115,7 +124,7 @@ const VIDEOS = [
     client: "Lifestyle Brand",
     desc: "Authentic UGC-style ad with strong hook, clean cuts, and on-screen text optimized for paid social performance.",
   },
-] as const;
+];
 
 const FILTERS = ["All", "Ads", "Motion", "Shorts", "Long Form"] as const;
 
@@ -177,7 +186,7 @@ function VideoModal({
   video,
   onClose,
 }: {
-  video: (typeof VIDEOS)[number] | null;
+  video: Video | null;
   onClose: () => void;
 }) {
   return (
@@ -237,17 +246,15 @@ function VideoModal({
 }
 
 export default function Home() {
-  const heroRef = useRef<HTMLElement | null>(null);
-  const workRef = useRef<HTMLElement | null>(null);
-  const servicesRef = useRef<HTMLElement | null>(null);
-  const aboutRef = useRef<HTMLElement | null>(null);
-  const contactRef = useRef<HTMLElement | null>(null);
+  const heroRef = useRef<HTMLElement>(null);
+  const workRef = useRef<HTMLElement>(null);
+  const servicesRef = useRef<HTMLElement>(null);
+  const aboutRef = useRef<HTMLElement>(null);
+  const contactRef = useRef<HTMLElement>(null);
 
   const [activeFilter, setActiveFilter] =
     useState<(typeof FILTERS)[number]>("All");
-  const [activeVideo, setActiveVideo] = useState<(typeof VIDEOS)[number] | null>(
-    null,
-  );
+  const [activeVideo, setActiveVideo] = useState<Video | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const { scrollYProgress } = useScroll({
