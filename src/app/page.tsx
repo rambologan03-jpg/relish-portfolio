@@ -314,12 +314,15 @@ export default function Home() {
                     key={link.label}
                     type="button"
                     onClick={() => {
-                      const map = {
+                      const map: Record<
+                        string,
+                        React.RefObject<HTMLElement | null>
+                      > = {
                         work: workRef,
                         services: servicesRef,
                         about: aboutRef,
                         contact: contactRef,
-                      } as const;
+                      };
                       scrollToSection(map[link.key]);
                     }}
                     className="transition hover:text-white"
@@ -387,12 +390,15 @@ export default function Home() {
                       key={link.label}
                       type="button"
                       onClick={() => {
-                        const map = {
+                        const map: Record<
+                          string,
+                          React.RefObject<HTMLElement | null>
+                        > = {
                           work: workRef,
                           services: servicesRef,
                           about: aboutRef,
                           contact: contactRef,
-                        } as const;
+                        };
                         scrollToSection(map[link.key]);
                       }}
                       className="text-left transition hover:text-white"
