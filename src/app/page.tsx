@@ -330,7 +330,7 @@ export default function Home() {
                         about: aboutRef,
                         contact: contactRef,
                       };
-                      scrollToSection(map[link.key]);
+                      scrollToSection(map[link.key as keyof typeof map]);
                     }}
                     className="transition hover:text-white"
                   >
