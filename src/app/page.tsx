@@ -19,6 +19,46 @@ type Video = {
 
 const VIDEOS: Video[] = [
   {
+    id: "VUOCaobWVvI",
+    title: "Emilia Bed",
+    category: "Ads",
+    client: "Arcedior",
+    desc: "AI UGC and lifestyle storytelling — lifelike human presence, luxury bedroom ambience, and tactile close-ups.",
+    customThumb: "/images/emilia-thumb.jpg",
+  },
+  {
+    id: "vpO1ueDCht8",
+    title: "From Empty to Extraordinary",
+    category: "Ads",
+    client: "Viyom Lifestyles",
+    desc: "High-concept spatial transformation ad — dynamic assembly motion and zero-gravity penthouse interior rendering.",
+    customThumb: "/images/viyom-empty-thumb.jpg",
+  },
+  {
+    id: "9cjwq8jxZh0",
+    title: "Monti Sofa — Durability Test",
+    category: "Ads",
+    client: "Viyom Lifestyles",
+    desc: "Viral conceptual ad demonstrating extreme durability and fabric strength with high-impact surreal visual choreography.",
+    customThumb: "/images/monti-hippo-thumb.jpg",
+  },
+  {
+    id: "vDSdU9jmJvo",
+    title: "Goa Waterways & Ferry Network",
+    category: "Shorts",
+    client: "India Impact Drive",
+    desc: "Investigative documentary reel combining first-person footage, 3D geographic satellite map motion graphics, and photorealistic AI cinematography.",
+    customThumb: "/images/goa-ferry-thumb.jpg",
+  },
+  {
+    id: "9rPqhCvU3Wk",
+    title: "Kinetic Mixed-Media Teaser",
+    category: "Motion",
+    client: "Documentary / Tech",
+    desc: "Fast-paced documentary intro featuring animated vintage paper engravings, camera aperture transitions, and textured editorial sound design.",
+    customThumb: "/images/kinetic-motion-thumb.jpg",
+  },
+  {
     id: "Mzw1bQwoW4w",
     title: "Brand Storytelling",
     category: "Motion",
