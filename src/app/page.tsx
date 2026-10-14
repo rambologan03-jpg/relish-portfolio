@@ -18,45 +18,13 @@ type Video = {
 };
 
 const VIDEOS: Video[] = [
+  // ROW 1: Cinematic & Directorial Hook
   {
-    id: "VUOCaobWVvI",
-    title: "Emilia Bed",
-    category: "Ads",
-    client: "Arcedior",
-    desc: "AI UGC and lifestyle storytelling — lifelike human presence, luxury bedroom ambience, and tactile close-ups.",
-    customThumb: "/images/emilia-thumb.jpg",
-  },
-  {
-    id: "vpO1ueDCht8",
-    title: "From Empty to Extraordinary",
-    category: "Ads",
-    client: "Viyom Lifestyles",
-    desc: "High-concept spatial transformation ad — dynamic assembly motion and zero-gravity penthouse interior rendering.",
-    customThumb: "/images/viyom-empty-thumb.jpg",
-  },
-  {
-    id: "9cjwq8jxZh0",
-    title: "Monti Sofa — Durability Test",
-    category: "Ads",
-    client: "Viyom Lifestyles",
-    desc: "Viral conceptual ad demonstrating extreme durability and fabric strength with high-impact surreal visual choreography.",
-    customThumb: "/images/monti-hippo-thumb.jpg",
-  },
-  {
-    id: "vDSdU9jmJvo",
-    title: "Goa Waterways & Ferry Network",
-    category: "Shorts",
-    client: "India Impact Drive",
-    desc: "Investigative documentary reel combining first-person footage, 3D geographic satellite map motion graphics, and photorealistic AI cinematography.",
-    customThumb: "/images/goa-ferry-thumb.jpg",
-  },
-  {
-    id: "9rPqhCvU3Wk",
-    title: "Kinetic Mixed-Media Teaser",
+    id: "hDbo07o7TSE",
+    title: "Cinematic Anime Short Film",
     category: "Motion",
-    client: "Documentary / Tech",
-    desc: "Fast-paced documentary intro featuring animated vintage paper engravings, camera aperture transitions, and textured editorial sound design.",
-    customThumb: "/images/kinetic-motion-thumb.jpg",
+    client: "AI Filmmaking",
+    desc: "AI-generated cinematic anime with controlled camera movement and atmospheric storytelling inspired by Japanese animation.",
   },
   {
     id: "Mzw1bQwoW4w",
@@ -66,11 +34,55 @@ const VIDEOS: Video[] = [
     desc: "Soft 3D visuals and calm motion communicating trust, care, and family-first values for a delivery brand.",
   },
   {
-    id: "hDbo07o7TSE",
-    title: "Cinematic Anime Short Film",
+    id: "bX_GDIuRP2s",
+    title: "Cinematic Trailer",
+    category: "Long Form",
+    client: "Brand / Event",
+    desc: "Pacing, rhythm, and emotional beats — blending visuals, sound design, and motion graphics into a compelling narrative arc.",
+  },
+
+  // ROW 2: Real-World Impact & High-Energy Motion
+  {
+    id: "vDSdU9jmJvo",
+    title: "Goa Waterways & Ferry Network",
+    category: "Shorts",
+    client: "India Impact Drive",
+    desc: "Investigative documentary reel combining first-person footage, 3D geographic satellite map motion graphics, and photorealistic AI cinematography.",
+    customThumb: "/images/goa-ferry-thumb.jpg",
+  },
+  {
+    id: "vpO1ueDCht8",
+    title: "From Empty to Extraordinary",
+    category: "Ads",
+    client: "AI Spatial VFX · Viyom",
+    desc: "AI-assisted commercial spatial transformation — zero-gravity dynamic assembly motion for high-end interior concepts.",
+    customThumb: "/images/viyom-empty-thumb.jpg",
+  },
+  {
+    id: "9rPqhCvU3Wk",
+    title: "Kinetic Mixed-Media Teaser",
     category: "Motion",
-    client: "AI Filmmaking",
-    desc: "AI-generated cinematic anime with controlled camera movement and atmospheric storytelling inspired by Japanese animation.",
+    client: "Documentary / Tech",
+    desc: "Fast-paced documentary intro featuring animated vintage paper engravings, camera aperture transitions, and textured editorial sound design.",
+    customThumb: "/images/kinetic-motion-thumb.jpg",
+  },
+
+  // ROW 3: Commercial Ads & AI Capabilities
+  {
+    id: "VUOCaobWVvI",
+    title: "Emilia Bed — AI UGC Ad",
+    category: "Ads",
+    client: "AI UGC · Arcedior",
+    desc: "Photorealistic AI-generated talent and lifestyle dialogue — luxury bedroom ambience with tactile product close-ups.",
+    customThumb: "/images/emilia-thumb.jpg",
+  },
+  {
+    id: "9cjwq8jxZh0",
+    title: "Monti Sofa — Durability Ad",
+    category: "Ads",
+    client: "AI Conceptual Ad · Viyom",
+    desc: "Surreal AI-generated durability concept — viral visual choreography demonstrating extreme product strength.",
+    customThumb: "/images/monti-hippo-thumb.jpg",
   },
   {
     id: "OMGGl0UMWqU",
@@ -79,27 +91,8 @@ const VIDEOS: Video[] = [
     client: "Tech & Science",
     desc: "Short-form explainer on AI research agents analyzing millions of papers — abstract medical visuals with clean pacing.",
   },
-  {
-    id: "Q7LF4xmlGDw",
-    title: "Motion Typography",
-    category: "Motion",
-    client: "Social Media",
-    desc: "Fast-paced motion with bold animated typography engineered for maximum impact on social platforms.",
-  },
-  {
-    id: "4-pjHsUJbws",
-    title: "Highlight Reel",
-    category: "Shorts",
-    client: "Content Creator",
-    desc: "Key moments from long-form content repackaged into engaging short-form reels with motion graphics overlays.",
-  },
-  {
-    id: "bX_GDIuRP2s",
-    title: "Cinematic Trailer",
-    category: "Long Form",
-    client: "Brand / Event",
-    desc: "Pacing, rhythm, and emotional beats — blending visuals, sound design, and motion graphics into a compelling narrative arc.",
-  },
+
+  // ROW 4+: Breadth & Supporting Proof
   {
     id: "-7lElYkiFlY",
     title: "Illustrated Explainer",
@@ -109,13 +102,6 @@ const VIDEOS: Video[] = [
     customThumb: "/images/explainer-thumb.jpg",
   },
   {
-    id: "zMgVHK6eem8",
-    title: "Talking Head Edit",
-    category: "Long Form",
-    client: "Creator",
-    desc: "Clean, engaging talking head production with professional pacing, color grade, and motion graphic overlays.",
-  },
-  {
     id: "3m9Ioz5lPGk",
     title: "Real Estate Showcase",
     category: "Shorts",
@@ -123,11 +109,32 @@ const VIDEOS: Video[] = [
     desc: "Short-form property showcase crafted to highlight key features and drive buyer interest quickly.",
   },
   {
+    id: "zMgVHK6eem8",
+    title: "Talking Head Edit",
+    category: "Long Form",
+    client: "Creator",
+    desc: "Clean, engaging talking head production with professional pacing, color grade, and motion graphic overlays.",
+  },
+  {
+    id: "Q7LF4xmlGDw",
+    title: "Motion Typography",
+    category: "Motion",
+    client: "Social Media",
+    desc: "Fast-paced motion with bold animated typography engineered for maximum impact on social platforms.",
+  },
+  {
     id: "lNsGxoSx2JM",
     title: "UGC Product Edit",
     category: "Ads",
     client: "E-commerce",
     desc: "Raw UGC footage transformed into a high-converting product ad with tight editing and strong hook.",
+  },
+  {
+    id: "4-pjHsUJbws",
+    title: "Highlight Reel",
+    category: "Shorts",
+    client: "Content Creator",
+    desc: "Key moments from long-form content repackaged into engaging short-form reels with motion graphics overlays.",
   },
   {
     id: "J5_dlPlFUoo",
